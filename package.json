@@ -1,0 +1,30 @@
+{
+  "name": "MMM-Udvaronc",
+  "version": "1.0.0",
+  "description": "MagicMirror module that displays compliments from Udvaronc.hu.",
+  "main": "MMM-Udvaronc.js",
+  "author": "György Balássy",
+  "license": "MIT",
+  "scripts": {
+    "lint": "npm run jsonlint & npm run eslint & npm run markdownlint",
+    "eslint": "eslint *.js",
+    "jsonlint": "jsonlint --quiet --comments .",
+    "markdownlint": "markdownlint *.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/balassy/MMM-Udvaronc"
+  },
+  "keywords": [
+    "MagicMirror",
+    "module",
+    "Udvaronc"
+  ],
+  "devDependencies": {
+    "@prantlf/jsonlint": "^10.2.0",
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "markdownlint-cli": "^0.26.0"
+  }
+}
