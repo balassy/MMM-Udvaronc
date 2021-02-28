@@ -21,12 +21,7 @@ Module.register('MMM-Udvaronc', {
   getDom() {
     const wrapper = document.createElement('div');
 
-    if (this.config.classes) {
-      wrapper.className = this.config.classes;
-    } else {
-      wrapper.className = 'thin bright pre-line ';
-      wrapper.className += this.viewModel && this.viewModel.bow && this.viewModel.bow.length > 70 ? 'large' : 'xlarge';
-    }
+    wrapper.className = this.config.classes ? this.config.classes : 'thin bright pre-line large';
 
     const complimentText = this.viewModel ? this.viewModel.bow : 'Üdvözöllek Mesterem!';
     wrapper.appendChild(document.createTextNode(complimentText));
